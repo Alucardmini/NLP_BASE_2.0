@@ -78,14 +78,14 @@ class word2vec():
             embed = tf.nn.embedding_lookup(self.embedding_dict, self.train_inputs) # batch_size
 
             # 得到NCE损失
-            self.loss = tf.reduce_mean(
+            self.loss =  tf.reduce_mean(
                 tf.nn.nce_loss(
-                    weights = self.nce_weight,
-                    biases = self.nce_biases,
-                    labels = self.train_labels,
-                    inputs = embed,
-                    num_sampled = self.num_sampled,
-                    num_classes = self.vocab_size
+                    weights=self.nce_weight,
+                    biases=self.nce_biases,
+                    labels=self.train_labels,
+                    inputs=embed,
+                    num_sampled=self.num_sampled,
+                    num_classes=self.vocab_size
                 )
             )
 

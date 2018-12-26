@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="398d563a-c7d6-4a3e-9318-6fccfa4e4625" name="Default" comment="" />
+    <list default="true" id="398d563a-c7d6-4a3e-9318-6fccfa4e4625" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec_tf/src/w2v_tf.py" afterPath="$PROJECT_DIR$/word2vec_tf/src/w2v_tf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec_tf/src/w2v_xc.py" afterPath="$PROJECT_DIR$/word2vec_tf/src/w2v_xc.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,30 +20,30 @@
       <file leaf-file-name="w2v_tf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/word2vec_tf/src/w2v_tf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+            <state relative-caret-position="271">
+              <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="false" />
-                <element signature="e#3209#3225#0" expanded="false" />
-                <element signature="e#4652#5256#0" expanded="false" />
-                <element signature="e#4700#5256#0" expanded="false" />
-                <element signature="e#4856#5256#0" expanded="false" />
-                <element signature="e#4954#5256#0" expanded="false" />
-                <element signature="e#5527#5627#0" expanded="false" />
-                <element signature="e#6035#6225#0" expanded="false" />
-                <element signature="e#6461#7047#0" expanded="false" />
-                <element signature="e#6764#6993#0" expanded="false" />
-                <element signature="e#7095#8436#0" expanded="false" />
-                <element signature="e#7321#7980#0" expanded="false" />
-                <element signature="e#8484#9400#0" expanded="false" />
-                <element signature="e#8681#9400#0" expanded="false" />
-                <element signature="e#9521#9633#0" expanded="false" />
-                <element signature="e#9573#9633#0" expanded="false" />
-                <element signature="e#9860#10506#0" expanded="false" />
-                <element signature="e#9912#10506#0" expanded="false" />
-                <element signature="e#10105#10474#0" expanded="false" />
-                <element signature="e#10246#10423#0" expanded="false" />
-                <element signature="e#10347#10423#0" expanded="false" />
+                <element signature="e#3198#3214#0" expanded="false" />
+                <element signature="e#4641#5245#0" expanded="false" />
+                <element signature="e#4689#5245#0" expanded="false" />
+                <element signature="e#4845#5245#0" expanded="false" />
+                <element signature="e#4943#5245#0" expanded="false" />
+                <element signature="e#5516#5616#0" expanded="false" />
+                <element signature="e#6024#6214#0" expanded="false" />
+                <element signature="e#6450#7036#0" expanded="false" />
+                <element signature="e#6753#6982#0" expanded="false" />
+                <element signature="e#7084#8425#0" expanded="false" />
+                <element signature="e#7310#7969#0" expanded="false" />
+                <element signature="e#8473#9389#0" expanded="false" />
+                <element signature="e#8670#9389#0" expanded="false" />
+                <element signature="e#9510#9622#0" expanded="false" />
+                <element signature="e#9562#9622#0" expanded="false" />
+                <element signature="e#9849#10495#0" expanded="false" />
+                <element signature="e#9901#10495#0" expanded="false" />
+                <element signature="e#10094#10463#0" expanded="false" />
+                <element signature="e#10235#10412#0" expanded="false" />
+                <element signature="e#10336#10412#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -47,8 +52,8 @@
       <file leaf-file-name="w2v_xc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/word2vec_tf/src/w2v_xc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="140">
+              <caret line="62" column="43" lean-forward="true" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
               <folding>
                 <element signature="e#32#44#0" expanded="true" />
               </folding>
@@ -90,7 +95,11 @@
       <find>embedding_lookup</find>
       <find>train_by_sentence</find>
       <find>batch_size</find>
+      <find>num_sampled</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -101,11 +110,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="481" />
-    <option name="y" value="96" />
+    <option name="x" value="443" />
+    <option name="y" value="103" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="743" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -344,17 +354,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="481" y="96" width="1301" height="744" extended-state="0" />
+    <frame x="443" y="103" width="1301" height="743" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21604449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21604449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28067228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40134907" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -392,36 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec_tf/src/w2v_tf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#3209#3225#0" expanded="false" />
-            <element signature="e#4652#5256#0" expanded="false" />
-            <element signature="e#4700#5256#0" expanded="false" />
-            <element signature="e#4856#5256#0" expanded="false" />
-            <element signature="e#4954#5256#0" expanded="false" />
-            <element signature="e#5527#5627#0" expanded="false" />
-            <element signature="e#6035#6225#0" expanded="false" />
-            <element signature="e#6461#7047#0" expanded="false" />
-            <element signature="e#6764#6993#0" expanded="false" />
-            <element signature="e#7095#8436#0" expanded="false" />
-            <element signature="e#7321#7980#0" expanded="false" />
-            <element signature="e#8484#9400#0" expanded="false" />
-            <element signature="e#8681#9400#0" expanded="false" />
-            <element signature="e#9521#9633#0" expanded="false" />
-            <element signature="e#9573#9633#0" expanded="false" />
-            <element signature="e#9860#10506#0" expanded="false" />
-            <element signature="e#9912#10506#0" expanded="false" />
-            <element signature="e#10105#10474#0" expanded="false" />
-            <element signature="e#10246#10423#0" expanded="false" />
-            <element signature="e#10347#10423#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/JH_App/opt/Python-3.6.2/lib/python3.6/site-packages/tensorflow/python/summary/writer/writer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -430,10 +411,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec_tf/src/w2v_tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="80" column="25" lean-forward="false" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#3198#3214#0" expanded="false" />
+            <element signature="e#4641#5245#0" expanded="false" />
+            <element signature="e#4689#5245#0" expanded="false" />
+            <element signature="e#4845#5245#0" expanded="false" />
+            <element signature="e#4943#5245#0" expanded="false" />
+            <element signature="e#5516#5616#0" expanded="false" />
+            <element signature="e#6024#6214#0" expanded="false" />
+            <element signature="e#6450#7036#0" expanded="false" />
+            <element signature="e#6753#6982#0" expanded="false" />
+            <element signature="e#7084#8425#0" expanded="false" />
+            <element signature="e#7310#7969#0" expanded="false" />
+            <element signature="e#8473#9389#0" expanded="false" />
+            <element signature="e#8670#9389#0" expanded="false" />
+            <element signature="e#9510#9622#0" expanded="false" />
+            <element signature="e#9562#9622#0" expanded="false" />
+            <element signature="e#9849#10495#0" expanded="false" />
+            <element signature="e#9901#10495#0" expanded="false" />
+            <element signature="e#10094#10463#0" expanded="false" />
+            <element signature="e#10235#10412#0" expanded="false" />
+            <element signature="e#10336#10412#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/word2vec_tf/src/w2v_xc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="62" column="43" lean-forward="true" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
           <folding>
             <element signature="e#32#44#0" expanded="true" />
           </folding>

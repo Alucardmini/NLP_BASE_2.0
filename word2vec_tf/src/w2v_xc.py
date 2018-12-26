@@ -5,6 +5,7 @@ import tensorflow as tf
 import collections
 import numpy as np
 from tqdm import tqdm
+import math
 
 class Word2Vec(object):
 
@@ -15,6 +16,7 @@ class Word2Vec(object):
                  lr_rate=0.1,
                  batch_size=None,
                  model_path=None,
+                 num_sampled=1000,
                  logdir='/tmp/simple_word2vec'):
         self.batch_size = batch_size
         if model_path:
@@ -29,6 +31,8 @@ class Word2Vec(object):
             self.embedding_size =   embeding_size
             self.lr_rate        =   lr_rate
             self.logdir         =   logdir
+            self.num_sampled    = num_sampled
+
             # construct word2id dict
             self.word2id = {self.wordlist[i]:i for i in range(len(self.wordlist))}
 
@@ -52,7 +56,21 @@ class Word2Vec(object):
             self.inputs = tf.placeholder(tf.int32, [self.batch_size])
             self.labels = tf.placeholder(tf.int32, [self.batch_size, 1])
             self.embedding_dict = tf.random_uniform([self.vocab_size, self.embedding_size], -1.0, 1.0)
+            self.nce_weight = tf.Variable(tf.random_normal([self.vocab_size, self.embedding_size],
+                                                           stddev=1.0 / math.sqrt(self.embedding_size)))
+            self.nce_bias = tf.Variable(tf.zeros([self.embedding_size]))
 
+            self.nce_loss = tf.reduce_mean(
+                tf.nn.nce_loss(
+                    weights=self.nce_weight,
+                    biases=self.nce_bias,
+                    inputs=self.inputs,
+                    labels=self.labels,
+                    num_classes=self.embedding_size,
+                    num_sampled=self.num_sampled
+                )
+            )
+        tf.summary.scalar('loss', self.nce_loss)
 
     def init_op(self):
         self.sess = tf.Session(graph=self.graph)
