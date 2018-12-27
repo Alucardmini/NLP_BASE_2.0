@@ -248,7 +248,8 @@ if __name__=='__main__':
     # step2 读取文本，预处理，分词，得到词典
     raw_word_list = []
     sentence_list = []
-    with open('../data/280.txt',encoding='gbk') as f:
+    # with open('../data/280.txt',encoding='gbk') as f:
+    with open('../data/280.txt',encoding='utf-8') as f:
         line = f.readline()
         while line:
             while '\n' in line:
@@ -277,8 +278,8 @@ if __name__=='__main__':
                    learning_rate=1,
                    num_sampled=100,         # 负采样个数
                    logdir='../tmp/280')       # tensorboard记录地址
-    test_word = ['萧炎','灵魂','火焰','长老','尊者','皱眉']
-    test_id = [word_list.index(x) for x in test_word]
+    # test_word = ['萧炎','灵魂','火焰','长老','尊者','皱眉']
+    # test_id = [word_list.index(x) for x in test_word]
     num_steps = 100000
     for i in range(num_steps):
         sent = sentence_list[i%len(sentence_list)]
