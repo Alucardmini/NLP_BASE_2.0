@@ -42,6 +42,21 @@ class AttLSTM:
         with tf.variable_scope("dropout"):
             self.h_drop = tf.nn.dropout(self.attn, self.dropout_keep_prob)
 
+        with tf.variable_scope("output"):
+            self.logits = tf.layers.dense(self.h_drop, num_classes, kernel_initializer=initializer)
+            self.predictions = tf.argmax(self.logits, 1, name="predictions")
+
+        # Calculate mean cross-entropy loss
+        with tf.variable_scope("loss"):
+            losses = tf.nn.softmax_cross_entropy_with_logits_v2(logits=self.logits, labels=self.input_y)
+            self.l2 = tf.add_n([tf.nn.l2_loss(v) for v in tf.trainable_variables()])
+            self.loss = tf.reduce_mean(losses) + l2_reg_lambda * self.l2
+
+        # Accuracy
+        with tf.variable_scope("accuracy"):
+            correct_predictions = tf.equal(self.predictions, tf.argmax(self.labels, 1))
+            self.accuracy = tf.reduce_mean(tf.cast(correct_predictions, tf.float32), name="accuracy")
+
     # Length of the sequence data
     @staticmethod
     def _length(seq):
