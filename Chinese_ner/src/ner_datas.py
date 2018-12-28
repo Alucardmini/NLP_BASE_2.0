@@ -112,5 +112,6 @@ if __name__ == '__main__':
     # (train_vocabs, test_labels), (test_vocabs, test_labels) = data_loader.load_data()
     # print(train_vocabs.__len__())
     test_content = "北京到上海多少公里"
+
     pred_x = data_loader.vector_sent_only(list(test_content))
     print(pred_x)

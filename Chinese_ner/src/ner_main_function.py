@@ -46,8 +46,7 @@ if __name__ == "__main__":
     train_labels = np_utils.to_categorical(train_labels, num_class)
     test_labels = np_utils.to_categorical(test_labels, num_class)
 
-    # train_labels = train_labels.reshape(train_labels.shape[0], train_labels.shape[-1], 1)
-    # test_labels = test_labels.reshape(test_labels.shape[0], test_labels.shape[-1], 1)
+
     print(train_vocabs.shape)
     print(train_labels.shape)
 
@@ -73,14 +72,16 @@ if __name__ == "__main__":
 
 
     print(model.summary())
-    model.fit(train_vocabs, train_labels, batch_size=128, epochs=1)
+    model.fit(train_vocabs, train_labels, batch_size=128, epochs=10)
+
+    model.save(model_path)
 
     test_content = "北京到上海多少公里"
     pred_x = data_loader.vector_sent_only(list(test_content))
 
     y = model.predict(pred_x)
     print(y.shape)
-    print(train_labels[0])
+    # print(train_labels[0])
     print(y)
 
 
