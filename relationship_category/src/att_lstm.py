@@ -30,7 +30,7 @@ class AttLSTM:
             fw_cell = tf.nn.rnn_cell.DropoutWrapper(_fw_cell, self.rnn_dropout_keep_prob)
             _bw_cell = tf.nn.rnn_cell.LSTMCell(hidden_size, initializer=initializer())
             bw_cell = tf.nn.rnn_cell.DropoutWrapper(_bw_cell, self.rnn_dropout_keep_prob)
-            (self.rnn_outputs, _) = tf.nn.bidirectional_dynamic_rnn(  cell_fw=fw_cell,
+            (self.rnn_outputs, _) = tf.nn.bidirectional_dynamic_rnn(cell_fw=fw_cell,
                                                                     cell_bw=bw_cell,
                                                                     inputs=self.embedded_chars,
                                                                     sequence_length=self._length(self.inputs),

@@ -29,7 +29,7 @@ flags.DEFINE_float("l2_reg_lambda",         1e-5,               "L2 regularizati
 
 # train parameters
 flags.DEFINE_integer("batch_size",          128,                "batch_size")
-flags.DEFINE_integer("num_epochs",          32,                 "train epochs")
+flags.DEFINE_integer("num_epochs",          200,                 "train epochs")
 flags.DEFINE_integer("evaluate_every",      100,                 "train epochs")
 flags.DEFINE_integer("num_checkpoints",     5,                  "Number of checkpoints to store (default: 5)")
 flags.DEFINE_integer("display_every",       10,                 "Number of iterations to display training information")
