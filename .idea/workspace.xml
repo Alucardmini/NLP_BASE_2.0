@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="398d563a-c7d6-4a3e-9318-6fccfa4e4625" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relationship_category/src/att_lstm.py" afterPath="$PROJECT_DIR$/relationship_category/src/att_lstm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relationship_category/src/configure.py" afterPath="$PROJECT_DIR$/relationship_category/src/configure.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relationship_category/src/relation_classifier_main.py" afterPath="$PROJECT_DIR$/relationship_category/src/relation_classifier_main.py" />
-    </list>
+    <list default="true" id="398d563a-c7d6-4a3e-9318-6fccfa4e4625" name="Default" comment="" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -181,8 +176,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="198" />
-    <option name="y" value="90" />
+    <option name="x" value="1" />
+    <option name="y" value="238" />
     <option name="width" value="1432" />
     <option name="height" value="807" />
   </component>
@@ -250,6 +245,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NLP_BASE_2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NLP_BASE_2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relationship_category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,7 +667,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="198" y="90" width="1432" height="807" extended-state="0" />
+    <frame x="1" y="238" width="1432" height="807" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34365994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
