@@ -58,7 +58,7 @@ class AttLSTM:
             # self.logits = tf.squeeze(y_hat)
 
             # 2. reshape the inputs
-            self.h_drop = tf.reshape(self.h_drop, (-1, FLAGS.hidden_size * 2))
+            self.h_drop = tf.reshape(self.h_drop, (-1, FLAGS.hidden_size ))
             self.logits = tf.layers.dense(self.h_drop, num_classes, kernel_initializer=initializer())
             self.predictions = tf.argmax(self.logits, 1, name="predictions")
 
