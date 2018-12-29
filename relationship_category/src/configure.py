@@ -16,6 +16,7 @@ flags.DEFINE_float("dev_sample_percent",     0.1,               "percent of the 
 flags.DEFINE_string("embedding_path",       None,               "path of pre-trained word embeddings")
 flags.DEFINE_integer("embedding_dim",       100,                "word2vec dim")
 flags.DEFINE_float("emb_dropout_keep_prob", 0.7,                "Dropout keep probability of embedding layer (default: 0.7)")
+flags.DEFINE_float("dev_sample_percentage", 0.1,                "dev_sample_percentage (default: 0.1)")
 
 # AttLSTM
 flags.DEFINE_integer("hidden_size",         100,                "Dimensionality of RNN hidden (default: 100)")
