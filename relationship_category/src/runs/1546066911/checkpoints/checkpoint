@@ -1,6 +1,0 @@
-model_checkpoint_path: "/Users/wuxikun/Documents/NLP_BASE_2.0/relationship_category/src/runs/1546066911/checkpoints/model-0.579-3500"
-all_model_checkpoint_paths: "/Users/wuxikun/Documents/NLP_BASE_2.0/relationship_category/src/runs/1546066911/checkpoints/model-0.56-2500"
-all_model_checkpoint_paths: "/Users/wuxikun/Documents/NLP_BASE_2.0/relationship_category/src/runs/1546066911/checkpoints/model-0.565-2600"
-all_model_checkpoint_paths: "/Users/wuxikun/Documents/NLP_BASE_2.0/relationship_category/src/runs/1546066911/checkpoints/model-0.57-2800"
-all_model_checkpoint_paths: "/Users/wuxikun/Documents/NLP_BASE_2.0/relationship_category/src/runs/1546066911/checkpoints/model-0.577-2900"
-all_model_checkpoint_paths: "/Users/wuxikun/Documents/NLP_BASE_2.0/relationship_category/src/runs/1546066911/checkpoints/model-0.579-3500"
