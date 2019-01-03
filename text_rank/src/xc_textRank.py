@@ -33,7 +33,7 @@ class TextRank(object):
 
         # 3. 输出top
         word_scores_keys = sorted(word_scores.items(), key=lambda item: item[1], reverse=True)
-        word_scores_keys = word_scores_keys[:10]
+        word_scores_keys = word_scores_keys[:top_count]
         return word_scores_keys
 
     def calc_word_score(self, input_word_lists, window_size):
@@ -62,10 +62,10 @@ class TextRank(object):
         #                'C': set('B'),
         #                'D': set(['C', 'A'])}
 
-        print("---")
+        d = 0.85  # 阻尼系数
         # 假设32步以后概率转移就OK了吧
-        d = 1.0 # 阻尼系数
-        for step in range(16):
+
+        for step in range(32):
             tmp_word_scores = {}
             for word, prob in word_scores.items():
                 new_score = math.fabs(1.0 - d)
@@ -91,7 +91,7 @@ if __name__ == "__main__":
     src_content = "程序员(英文Programmer)是从事程序开发、维护的专业人员。一般将程序员分为程序设计人员和程序编码人员，但两者的界限并不非常清楚，特别是在中国。软件从业人员分为初级程序员、高级程序员、系统分析员和项目经理四大类。我取出了百度百科关于“程序员”的定义作为测试用例，很明显，这段定义的关键字应当是“程序员”并且“程序员”的得分应当最高。"
     # print(list(jieba.cut(src_content)))
     textrank = TextRank()
-    print( textrank.abstract_keys(src_content))
+    print(textrank.abstract_keys(src_content))
     # tmp1 = set([1, 2, 3])
     # tmp2 = [2, 3, 5]
     # tmp1 |= set(tmp2)
