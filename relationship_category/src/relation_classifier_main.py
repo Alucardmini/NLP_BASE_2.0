@@ -139,9 +139,9 @@ def train():
                             path = saver.save(sess, checkpoint_prefix + "-{:.3g}".format(best_f1), global_step=step)
                             print("Saved model checkpoint to {}\n".format(path))
 
+
 def main():
     train()
-
 
 if __name__ == "__main__":
     main()

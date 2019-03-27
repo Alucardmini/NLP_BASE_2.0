@@ -19,8 +19,6 @@ from keras.utils import np_utils
 from keras import backend as K
 K.set_image_dim_ordering('tf')
 
-
-
 if __name__ == "__main__":
 
     model_path = '../data/bilstm_crf_4_ner.h5'
@@ -38,7 +36,6 @@ if __name__ == "__main__":
     max_len = 100
     train_vocabs = sequence.pad_sequences(train_vocabs, max_len)
     test_vocabs = sequence.pad_sequences(test_vocabs, max_len)
-
 
     train_labels = sequence.pad_sequences(train_labels, max_len, dtype='float')
     test_labels = sequence.pad_sequences(test_labels, max_len, dtype='float')
