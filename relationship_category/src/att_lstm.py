@@ -35,8 +35,6 @@ class AttLSTM:
                                                                   inputs=self.embedded_chars,
                                                                   sequence_length=self._length(self.inputs),
                                                                   dtype=tf.float32)
-
-
             self.rnn_outputs = tf.add(self.rnn_outputs[0], self.rnn_outputs[1])
 
         with tf.variable_scope("attention"):

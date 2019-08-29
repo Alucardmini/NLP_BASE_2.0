@@ -42,24 +42,21 @@ if __name__ == "__main__":
 
     train_labels = np_utils.to_categorical(train_labels, num_class)
     test_labels = np_utils.to_categorical(test_labels, num_class)
-
-
     print(train_vocabs.shape)
     print(train_labels.shape)
-
     model = Sequential()
     # model.add(Input(shape=(None,), dtype='int32'))
     model.add(Embedding(vocab_size, embedding_size, mask_zero=True))
     model.add(Bidirectional(LSTM(hidden_units, return_sequences=True)))
     model.add(Dropout(dropout_rate))
-    model.add(Bidirectional(LSTM(hidden_units, return_sequences=True)))
-    model.add(Dropout(dropout_rate))
+    # model.add(Bidirectional(LSTM(hidden_units, return_sequences=True)))
+    # model.add(Dropout(dropout_rate))
     # model.add(TimeDistributed(Dense(num_class)))
     model.add(TimeDistributed(Dense(num_class)))
     crf_layer = CRF(num_class)
     model.add(crf_layer)
 
-    optmr = optimizers.Adam(lr=0.001, beta_1=0.5)
+    optmr = optimizers.Adam(lr=0.002, beta_1=0.5)
 
     model.compile(
         optimizer='rmsprop',
@@ -67,12 +64,17 @@ if __name__ == "__main__":
         metrics=[crf_layer.accuracy]
     )
 
-
     print(model.summary())
-    model.fit(train_vocabs, train_labels, batch_size=128, epochs=10)
+    model.fit(train_vocabs, train_labels, batch_size=128, epochs=100)
+
+    # from keras.models import load_model
+    # model = load_model(model_path)
 
     model.save(model_path)
+    from keras_contrib.utils import save_load_utils
 
+    save_load_utils.load_all_weights(model, model_path,
+                                     include_optimizer=False)
     test_content = "北京到上海多少公里"
     pred_x = data_loader.vector_sent_only(list(test_content))
 
@@ -80,5 +82,11 @@ if __name__ == "__main__":
     print(y.shape)
     # print(train_labels[0])
     print(y)
+    import numpy as np
+    res = np.array(y)
+    tmp = [np.argmax(k) for list in res for k in list]
+    print(tmp)
+
+
 
 
